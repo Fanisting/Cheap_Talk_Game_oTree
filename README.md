@@ -22,7 +22,7 @@ The receiver's decision page:
 
 New round: 
 <div align="center">
-<img src=https://user-images.githubusercontent.com/87118530/210906747-a44eca20-c995-466b-bd32-8a89e63c369b.png width=60% />
+<img src=https://user-images.githubusercontent.com/87118530/210907380-5f7de70e-a9e3-45d8-a7af-d1d992375409.png width=60% />
 </div>
 
 Results and Payoffs: 
