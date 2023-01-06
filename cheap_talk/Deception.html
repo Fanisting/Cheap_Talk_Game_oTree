@@ -1,0 +1,66 @@
+{{ block title }}
+    Decision
+{{ endblock }}
+
+{{ block content }}
+
+<table border="1" align="center">
+    <caption style="text-align:center">Investment Choices </caption>
+    <tr>
+        <td><b >choice</b></td>
+        <td><b >Sender's payoff</b></td>
+        <td><b >Receiver's payoff</b></td>
+    </tr>
+    <tr>
+        <td align="center" >A</td>
+        <td align="center" >{{set_chosen.0}}</td>
+        <td align="center" >{{set_chosen.1}}</td>
+    </tr>
+    <tr>
+        <td align="center" >B</td>
+        <td align="center" >{{set_chosen.2}}</td>
+        <td align="center" >{{set_chosen.3}}</td>
+    </tr>
+</table>
+
+<br>
+
+<div>
+    <ul>
+        <li style="line-height:2">You are selected as <strong>Sender</strong></li>
+        <li style="line-height:2">The above table shows the information of two investment options, which is <strong>completely invisible</strong> for the receiver.
+        <li style="line-height:2">Please send your recommendation message:</li>
+    </ul>
+</div>
+<div>
+    <center>    
+        <tr>
+            <td height = '50' ><strong >Choice A can make you earn more than Choice B</strong></td>
+            <td class='radio_input' > 
+            <input  type="radio" name="sender_deception" required value="Choice A can make you earn more than Choice B" > 
+            <input  type="radio" name="sender_deception" required value="Choice B can make you earn more than Choice A" >
+            </td>
+            <td height = '50' ><strong >Choice B can make you earn more than Choice A</strong></td>
+        </tr>
+    </center>
+</div>
+<div>
+    <br>
+    <center><button class="otree-btn-next btn btn-primary">Next step</button></center>
+</div>
+
+<style>
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: center;
+	}
+</style>
+
+{{ endblock }}

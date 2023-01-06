@@ -1,0 +1,45 @@
+{{ block title }}
+    Results and Payoffs
+{{ endblock }}
+{{ block content }}
+{{if player.role == Constants.Sender_Role}}
+
+<div class="card bg-light m-3">
+    <div class="card-body">
+    Your total payoff is <strong>{{player.participant.payoff1}}</strong>
+    </div>
+        <table>
+            <tr align = 'center'>
+                <td align = 'center'><strong>Payment round</strong></td>
+                <td align = 'center'><strong>Your decision</strong></td>
+                <td align = 'center'><strong>Your payoff</strong></td>   
+            </tr>
+            <tr>
+                <td align = 'center'> {{player.participant.pay_round}}</td>
+                <td align = 'center'>{{player.participant.dec}} </td>
+                <td align = 'center'>{{player.participant.payoff1}}</td> 
+            </tr>
+        </table>
+    </div>
+</div>
+{{else}}
+<div class="card bg-light m-3">
+    <div class="card-body">
+    Your total payoff is <strong>{{player.participant.payoff1}}</strong>
+    </div>
+        <table>
+            <tr align = 'center'>
+              <td align = 'center'><strong>Payment round</strong></td>
+              <td align = 'center'><strong>Your decision</strong></td>
+              <td align = 'center'><strong>Your payoff</strong></td>    
+            </tr>
+            <tr>
+                <td align = 'center'> {{player.participant.pay_round}}</td>
+                <td align = 'center'>{{player.participant.dec}} </td>
+                <td align = 'center'>{{player.participant.payoff1}}</td> 
+            </tr>
+        </table>
+    </div>
+</div>
+{{endif}}
+{{ endblock }}

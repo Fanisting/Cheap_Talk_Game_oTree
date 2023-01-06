@@ -1,0 +1,41 @@
+{{ block title }}
+    Comprehension Test
+{{ endblock }}
+{{ block content }}
+<div>
+	<table border="1" align="center">
+		<caption>used only for illustration</caption>
+		<tr>
+			<td><b>Choices</b></td>
+			<td><b>Sender's Payoff</b></td>
+			<td><b>Receiver's Payoff</b></td>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>1</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>B</td>
+			<td>3</td>
+			<td>2</td>
+		</tr>
+	</table>
+</div>
+<style>
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: center;
+	}
+</style>
+    {{ formfields }}
+    <center><button class="otree-btn-next btn btn-primary">Next step</button></center>
+
+{{ endblock }}

@@ -1,0 +1,13 @@
+{{ extends 'otree/WaitPage.html' }}
+{{ block title }}Please Wait{{ endblock }}
+{{ block content }}
+{{if player.role == "Receiver"}}
+    <p>
+        You are selected as <strong>Receiver</strong>, please wait for sender's message.
+    </p>
+{{else}}
+    <p>
+        You are selected as <strong>Sender</strong>, please wait for receiver's decision.
+    </p>
+{{endif}}
+{{ endblock }}

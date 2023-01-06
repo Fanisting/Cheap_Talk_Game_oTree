@@ -1,0 +1,45 @@
+{{ block title }}
+    Decision
+{{ endblock }}
+{{ block content }}
+<div>
+    <p>You are selected as <strong>Receiver</strong>, the message from sender is:</p> 
+</div>
+<div>
+  <center><strong>{{group.sender_deception}}</strong></center>
+</div>
+<div>
+</div>
+<div>
+  <p>Please decide to accept or reject:</p>
+  <center>
+      <tr>
+          <td height = '50' ><strong >accept</strong></td>
+          <td class='radio_input'> 
+          <input  type="radio" name="receiver_decision" required value="accept" > 
+          <input  type="radio" name="receiver_decision" required value="reject" >
+          </td>
+          <td height = '50' ><strong >reject</strong></td>
+      </tr>
+  </center>
+</div>
+<div>
+  <br>
+  <center><button class="otree-btn-next btn btn-primary">Next step</button></center>
+</div>
+
+<style>
+	table {
+		border-left: none;
+		border-right: none;
+	}
+	td {
+		font-weight: normal;
+		padding: 0.25em 0.5em;
+		line-height: 1.5;
+		min-height: 1.5em;
+		text-align: center;
+	}
+</style>
+
+{{ endblock }}
